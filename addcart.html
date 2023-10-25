@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <title>KCR Exports and Imports</title>
+</head>
+<body>
+    <header>
+        <h1><font size="10" color="yellow">Welcome to KCR Exports and Imports</font></h1>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        #register-container {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px 0px #aaa;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="register-container">
+        <h2>Address</h2>
+        <form action="C:\Users\pavan\OneDrive\Desktop\address.html" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="phone number">Phone number:</label>
+            <input type="phone number" id="phone number" name="phone number" required>
+            <br>
+            <label for="pin code">Pin code:</label>
+            <input type="pin code" id="pin code" name="pin code" required>
+            <br>
+            <label for="Area">Area:</label>
+            <input type="Area" id="Area" name="Area" required>
+            <br>
+            <label for="City">City:</label>
+            <input type="City" id="City" name="City" required>
+            <br>
+            <label for="landmark">Land mark:</label>
+            <input type="land mark" id="land mark" name="land mark" required>
+            <br> 
+            <input type="submit" value="Address">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Add your registration validation logic here
+            // You can check for valid email format, password strength, etc.
+
+            if (username && email && password) {
+                // Registration successful
+                alert('Registration successful');
+                return true;
+            } else {
+                alert('Please fill in all required fields.');
+                return false;
+            }
+        }
+    </script>
+    <hr><hr>
+    <marquee scrollamount="30" bgcolor="yellow"><font face="impact" size="6" color="green" >KCR EXPORTS AND IMPORTS</font></marqee>
+    <hr><hr>
+</body>
+</html>
